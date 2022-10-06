@@ -48,7 +48,12 @@ if (age < 18) {
 
 }
 
-const price = kilometers * 0.21 * discount;
+let price = kilometers * 0.21 * discount;
+console.log("price", price, typeof(price));
+
+price *= 100;
+price = Math.round(price);
+price /= 100;
 console.log("price", price, typeof(price));
 
 // OUTPUT
