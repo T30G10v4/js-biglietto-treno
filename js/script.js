@@ -25,12 +25,14 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 */
 
+// INPUT
 const kilometers = parseInt(prompt("Inserisci i chilometri"));
 console.log("kilometers", kilometers, typeof(kilometers));
 
 const age = parseInt(prompt("Inserisci l'età del passeggero"));
 console.log("age", age, typeof(age));
 
+// ELABORAZIONE
 let discount = 1.00;
 console.log("discount", discount, typeof(discount));
 
@@ -49,6 +51,7 @@ if (age < 18) {
 const price = kilometers * 0.21 * discount;
 console.log("price", price, typeof(price));
 
+// OUTPUT
 document.getElementById("price").innerHTML = price;
 
 
